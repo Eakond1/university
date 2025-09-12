@@ -1,0 +1,34 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL,"rus");
+	double a,b,c,d,x1,x2,x;
+	cout<<"введите 3 числа a b c"<<endl;
+	cin>>a>>b>>c;
+	if (a!=0){
+		d = (b*b) - (4*a*c);
+		if (d==0){
+			cout<<"Корень уравненияÿ";
+			x = (-b)/(2*a);
+			cout<<" "<<x;
+		}
+		if (d<0){
+			cout<<"нет решений";
+		}
+		if (d>0){
+			cout<<"Корни уравнения"<<endl;
+			x1 = ((-b)+(sqrt(d)))/(2*a);
+			x2 = ((-b)-(sqrt(d)))/(2*a);
+			cout<<x1<<" "<< x2;
+		}	
+	}
+	else{
+		x = (-c)/b;
+		cout<<"Корень уравнения";
+		cout<<" "<<x;
+	}
+
+	return 0;
+}
