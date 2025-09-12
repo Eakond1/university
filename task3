@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL,"rus");
+	double b,c,x;
+	cout<<"Введите 2 числа: b и c"<<endl;
+	cin>>b>>c;
+	cout<<"результат bx + c ==";
+	x = (-c)/b;
+	cout<<" "<<x;
+	return 0;
+}
