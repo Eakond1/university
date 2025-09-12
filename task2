@@ -2,13 +2,22 @@
 using namespace std;
 
 int main() {
+	setlocale(LC_ALL,"rus");
 	double a,b;
+	cout<<"введите 2 числа a b";
 	cin>>a>>b;
+	cout<<"a+b=";
 	cout<<a+b<<endl;
+	cout<<"a-b=";
 	cout<<a-b<<endl;
+	cout<<"a*b=";
 	cout<<a*b<<endl;
+	cout<<"a/b=";
 	if (b!=0){
 		cout<<a/b<<endl;
+	}
+	else{
+		cout<<"деление на 0";
 	}
 	return 0;
 }
