@@ -1,0 +1,30 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL,"rus");
+	bool time,blind,lamp;
+	cout<<"На улице светло? Введите 1,если да или 0, если нет"<<endl;
+	cin>>time;
+	cout<<"Шторы открыты? Введите 1,если да или 0, если нет"<<endl;
+	cin>>blind;
+	cout<<"Лампа включена? Введите 1,если да или 0, если нет"<<endl;
+	cin>>lamp;
+	if (time && blind){
+		cout<<"Светло";
+	}
+	else if (lamp){
+		cout<<"Светло";
+	}
+	else if(time && blind && lamp){
+		cout<<"Светло";
+	}
+	else if(blind&&lamp){
+		cout<<"Светло";
+	}
+	else{
+		cout<<"темно";
+	}
+	return 0;
+}
