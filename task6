@@ -6,7 +6,13 @@ int main() {
 	setlocale(LC_ALL,"rus");
 	double h,r,R,l,V,S;
 	cout<<"Ââåäèòå âûñîòó êîíóñà, áîëüøèé è ìåíüøèé ðàäèóñû, îáðàçóþùóþ êîíóñà"<<endl;
-	cin>>h>>R>>r>>l;
+		cin>>h>>R>>r;
+	if ( R>r){
+		l = sqrt((R-r)*(R-r) + h*h);
+	}
+	else{
+		l = sqrt((r-R)*(r-R) + h*h);
+	}
 	if ((h>0)&&(r>0)&&(R>0)){
 		V = 1/3*3.14*h*(R*R+R*r+r*r);
 		S = 3.14*(R*R+(R+r)*l+r*r);
