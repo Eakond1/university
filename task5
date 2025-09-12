@@ -11,20 +11,11 @@ int main() {
 	cin>>blind;
 	cout<<"Лампа включена? Введите 1,если да или 0, если нет"<<endl;
 	cin>>lamp;
-	if (time && blind){
-		cout<<"Светло";
-	}
-	else if (lamp){
-		cout<<"Светло";
-	}
-	else if(time && blind && lamp){
-		cout<<"Светло";
-	}
-	else if(blind&&lamp){
-		cout<<"Светло";
+	if ((time && blind) or (lamp)) {
+		cout<<"light";
 	}
 	else{
-		cout<<"темно";
+		cout<<"dark";
 	}
 	return 0;
 }
