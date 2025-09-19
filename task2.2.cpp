@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL,"rus");
 	double x,y,b,z;
-	cout<<"Ââåäèòå 3 ÷èñëà"<<endl;
+	cout<<"Введите 3 числа"<<endl;
 	cin>> x>>y>>b;
 	if ((b-y)>0 && (b-x)>=0){
         z = log(b-y)*sqrt(b-x);
@@ -15,3 +15,4 @@ int main() {
         cout<<"Error";
 	}
 }
+
