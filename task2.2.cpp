@@ -5,7 +5,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL,"rus");
 	double x,y,b,z;
-	cout<<"Ââåäèòå 3 ÷èñëà"<<endl;
+	cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ 3 Ã·Ã¨Ã±Ã«Ã "<<endl;
 	cin>> x>>y>>b;
 	if ((b-y)>0 && (b-x)>=0){
         z = log(b-y)*sqrt(b-x);
