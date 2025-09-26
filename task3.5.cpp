@@ -8,7 +8,7 @@ int main () {
     for (i=2; i<=n; i++) {
     a[i]=i;
     }
-    cout << "Ïðîñòûå ÷èñëà:" << endl;
+    cout << "ÐŸÑ€Ð¾ÑÑ‚Ñ‹Ðµ Ñ‡Ð¸ÑÐ»Ð°:" << endl;
     for(i = 2;i<=n;i++){
             if(a[i] != 0){
             cout << a[i] << endl;
@@ -20,3 +20,4 @@ int main () {
   return 0;
 
 }
+
