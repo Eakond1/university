@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+    cout<<"Вывод содержимого текстового файла";
     setlocale(LC_ALL,"rus");
     ifstream file("pr3.txt");
     string line;
@@ -14,3 +15,4 @@ int main()
         getline(file,line);
     }
 }
+
