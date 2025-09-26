@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int Division(int a, int b) {
     a = abs(a);
     b = abs(b);
@@ -11,7 +10,6 @@ int Division(int a, int b) {
     }
     return a;
 }
-
 int Subtraction(int a, int b) {
     a = abs(a);
     b = abs(b);
@@ -24,21 +22,17 @@ int Subtraction(int a, int b) {
     }
     return a;
 }
-
 int main() {
     setlocale(LC_ALL,"rus");
     int a, b;
-
-    cout << "Ââåäèòå äâà ÷èñëà: ";
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð²Ð° Ñ‡Ð¸ÑÐ»Ð°: ";
     cin >> a >> b;
-
     if (a == 0 && b == 0) {
-        cout << "ÍÎÄ íå îïðåäåëåí äëÿ äâóõ íóëåé" << endl;
+        cout << "ÐÐžÐ” Ð½Ðµ Ð¾Ð¿Ñ€ÐµÐ´ÐµÐ»ÐµÐ½ Ð´Ð»Ñ Ð´Ð²ÑƒÑ… Ð½ÑƒÐ»ÐµÐ¹" << endl;
         return 1;
     }
-
-    cout << "ÍÎÄ ìåòîäîì äåëåíèÿ: " << Division(a, b) << endl;
-    cout << "ÍÎÄ ìåòîäîì âû÷èòàíèÿ: " << Subtraction(a, b) << endl;
-
+    cout << "ÐÐžÐ” Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð¼ Ð´ÐµÐ»ÐµÐ½Ð¸Ñ: " << Division(a, b) << endl;
+    cout << "ÐÐžÐ” Ð¼ÐµÑ‚Ð¾Ð´Ð¾Ð¼ Ð²Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ñ: " << Subtraction(a, b) << endl;
     return 0;
 }
+
