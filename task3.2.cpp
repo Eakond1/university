@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL,"rus");
-    cout<<"Âûâîä ñîäåðæèìîãî òåêñòîâîãî ôàéëà"<<endl;
+    cout<<"Ð’Ñ‹Ð²Ð¾Ð´ ÑÐ¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ð³Ð¾ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ð¾Ð³Ð¾ Ñ„Ð°Ð¹Ð»Ð°"<<endl;
     ifstream file("pr3.2.txt");
     string line;
     getline(file,line);
@@ -17,3 +17,4 @@ int main()
     }
 
 }
+
