@@ -5,14 +5,19 @@ using namespace std;
 
 int main()
 {
-    cout<<"Вывод содержимого текстового файла";
     setlocale(LC_ALL,"rus");
-    ifstream file("pr3.txt");
-    string line;
-    getline(file,line);
-    while (file){
-        cout<<line<<endl;
-        getline(file,line);
-    }
-}
+    string text;
+    cout << "Введите текст файла: ";
+    getline(cin, text);
+    ofstream file("1.txt");
+    file << text;
+    file.close();
+    ifstream readFile("1.txt");
+    string content;
+    getline(readFile, content);
+    readFile.close();
+    cout << "\nСодержимое файла:" << endl;
+    cout << content << endl;
 
+    return 0;
+}
