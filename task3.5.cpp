@@ -3,7 +3,9 @@ using namespace std;
 int main () {
     setlocale(LC_ALL,"rus");
     int n,i,p,np;
+    cout<<"Введите число больше 2"<<endl;
     cin>>n;
+    if (n>2){
     int a[n+1];
     for (i=2; i<=n; i++) {
     a[i]=i;
@@ -17,7 +19,9 @@ int main () {
         }
     }
   }
+    }
+    else{
+            cout<<"Error";
+    }
   return 0;
-
 }
-
