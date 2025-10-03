@@ -6,12 +6,20 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL,"rus");
-    ifstream file("pr3.3.txt");
+    setlocale(LC_ALL,"rus");
+    string text;
+    cout << "Введите текст файла: "<<endl;
+    getline(cin, text);
+    ofstream file("1.txt");
+    file << text;
+    file.close();
+    ifstream readFile("1.txt");
     string line,line1,save;
+    getline(readFile, line);
+    readFile.close();
     int ind;
     save = "";
     bool key = 0;
-    getline(file,line);
     for (int i=0; i<line.size();i++){
         if (((line[i]>=64) && (line[i]<=90)) or ((line[i]>=61) && (line[i]<=122))){
             key = true;
@@ -57,4 +65,3 @@ int main()
         }
     }
 }
-
