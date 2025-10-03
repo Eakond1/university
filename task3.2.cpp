@@ -6,15 +6,20 @@ using namespace std;
 int main()
 {
     setlocale(LC_ALL,"rus");
-    cout<<"Вывод содержимого текстового файла"<<endl;
-    ifstream file("pr3.2.txt");
-    string line;
-    getline(file,line);
-    for (int i=0; i<line.size();i++){
-        if((line[i]>'/') && (line[i]<':')){
-            cout<<line[i];
+    string text;
+    cout << "Введите текст файла: ";
+    getline(cin, text);
+    ofstream file("1.txt");
+    file << text;
+    file.close();
+    ifstream readFile("1.txt");
+    string content;
+    getline(readFile, content);
+    readFile.close();
+    for (int i=0; i<content.size();i++){
+        if((content[i]>'/') && (content[i]<':')){
+            cout<<content[i];
         }
     }
-
+    return 0;
 }
-
