@@ -6,7 +6,7 @@ int main () {
     setlocale(LC_ALL,"rus");
     ofstream file1("1.txt");
     double number1;
-    cout<<"Ââåäèòå 10 ÷èñåë"<<endl;
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 10 Ñ‡Ð¸ÑÐµÐ»"<<endl;
     for (int i = 1; i <= 10; i++) {
         cin >> number1;
         file1 << number1 << endl;
@@ -22,3 +22,4 @@ int main () {
   return 0;
 
 }
+
