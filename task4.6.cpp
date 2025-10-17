@@ -35,8 +35,8 @@ int main() {
             prodmi=i;
         }
     }
-cout<<"Ïðîäàâåö, çàðàáîòàâøèé áîëüøå âñåãî äåíåã "<< maxi<<" - "<<prodm+1<<endl;
-cout<<"Ïðîäàâåö, çàðàáîòàâøèé ìåíüøå âñåãî äåíåã "<< mini<<" - "<< prodmi+1<<endl;
+cout<<"Продавец, заработавший больше всего денег "<< maxi<<" - "<<prodm+1<<endl;
+cout<<"Продавец, заработавший меньше всего денег "<< mini<<" - "<< prodmi+1<<endl;
 double minkom=1000,maxkom=-1000;
 for(int i = 0; i < 3;i++){
         if (minkom> matrix3[i][1]){
@@ -48,21 +48,21 @@ for(int i = 0; i < 3;i++){
                 prodm = i;
         }
     }
-    cout<<"Ïðîäàâåö, çàðàáîòàâøèé áîëüøå âñåãî êîììèñèîííûõ "<< maxkom<<" - "<<prodm+1<<endl;
-    cout<<"Ïðîäàâåö, çàðàáîòàâøèé ìåíüøå âñåãî êîììèñèîííûõ "<< minkom<<" - "<< prodmi+1<<endl;
+    cout<<"Продавец, заработавший больше всего коммисионных "<< maxkom<<" - "<<prodm+1<<endl;
+    cout<<"Продавец, заработавший меньше всего коммисионных "<< minkom<<" - "<< prodmi+1<<endl;
     double summa=0,ress=0,summi=0;
     for (int i = 0; i<3;i++){
         summa += matrix3[i][0];
     }
-    cout<<"Îáùàÿ âûðó÷êà "<<summa<<endl;
+    cout<<"Общая выручка "<<summa<<endl;
     for (int i = 0; i<3;i++){
         ress += matrix3[i][1];
     }
-    cout<<"Îáùàÿ ñóììà êîìèññèîííûõ "<<ress<<endl;
+    cout<<"Общая сумма комиссионных "<<ress<<endl;
     for (int i = 0; i<3;i++){
         summi+=(matrix3[i][0]+matrix3[i][1]);
     }
-    cout<<"Îáùàÿ ñóììà äåíåã, ïðîøåäøàÿ ÷åðåç ðóêè ïðîäàâöîâ "<< summi;
+    cout<<"Общая сумма денег, прошедшая через руки продавцов "<< summi;
     return 0;
 }
 
