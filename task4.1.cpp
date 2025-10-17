@@ -1,3 +1,4 @@
+#Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ 1
 #include <iostream>
 using namespace std;
 double rectangle(double leng, double high){
@@ -19,30 +20,30 @@ double cicle(double r){
 int main () {
     setlocale(LC_ALL,"rus");
     double x,y;
-    cout<<"Ââåäèòå øèðèíó è âûñîòó ïðÿìîóãîëüíèêà"<<endl;
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ Ð¸ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°"<<endl;
     cin>> x>>y;
     if (x>0&& y>0){
-    cout<<"Ïëîùàäü ïðÿìîóãîëüíèêà ";
+    cout<<"ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð¿Ñ€ÑÐ¼Ð¾ÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° ";
     cout<<rectangle(x,y)<<endl;
     }
     else{
         cout<<"Error"<<endl;
     }
     double c,d;
-    cout<<"Ââåäèòå îñíîâàíèå è âûñîòó òðåóãîëüíèêà"<<endl;
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ Ð¸ Ð²Ñ‹ÑÐ¾Ñ‚Ñƒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°"<<endl;
     cin>> c>>d;
     if (c>0&& d>0){
-    cout<<"Ïëîùàäü òðåóãîëüíèêà ";
+    cout<<"ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ° ";
     cout<<triangle(c,d)<<endl;
     }
     else{
         cout<<"Error"<<endl;
     }
     double a,b;
-    cout<<"Ââåäèòå ðàäèóñ êðóãà"<<endl;
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð´Ð¸ÑƒÑ ÐºÑ€ÑƒÐ³Ð°"<<endl;
     cin>> a;
     if (a>0){
-    cout<<"Ïëîùàäü êðóãà ";
+    cout<<"ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ ÐºÑ€ÑƒÐ³Ð° ";
     cout<<cicle(a)<<endl;
     }
     else{
