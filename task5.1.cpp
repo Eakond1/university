@@ -8,12 +8,12 @@ int main(){
     int summ=0;
     bool vhod = true;
     znach = "IVXLCDM";
-    cout<<"Ââåäèòå ÷èñëî ðèìñêèìè öèôðàìè IVXLCDM"<<endl;
+    cout<<"Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã·Ã¨Ã±Ã«Ã® Ã°Ã¨Ã¬Ã±ÃªÃ¨Ã¬Ã¨ Ã¶Ã¨Ã´Ã°Ã Ã¬Ã¨ IVXLCDM"<<endl;
     cin>>str;
     for (int i =0; i < str.size(); i++){
         if (znach.find(str[i]) == string::npos){
             vhod = false;
-            cout << "Error: íåäîïóñòèìûé ñèìâîë" << endl;
+            cout << "Error: Ã­Ã¥Ã¤Ã®Ã¯Ã³Ã±Ã²Ã¨Ã¬Ã»Ã© Ã±Ã¨Ã¬Ã¢Ã®Ã«" << endl;
             return 1;
         }
     }
