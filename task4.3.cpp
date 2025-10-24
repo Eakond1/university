@@ -40,7 +40,11 @@ int main() {
                         if (row == next_pos) has_neighbor = true;
                     }
 
-                    cout << (has_neighbor ? " " : ".");
+                    if (has_neighbor) {
+                        cout << " ";
+                    } else {
+                        cout << ".";
+                    }
                 }
             } else if (row == height / 2) {
                 cout << "-";
