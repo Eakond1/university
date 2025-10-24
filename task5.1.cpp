@@ -8,12 +8,12 @@ int main(){
     int summ=0;
     bool vhod = true;
     znach = "IVXLCDM";
-    cout<<"Ââåäèòå ÷èñëî ðèìñêèìè öèôðàìè IVXLCDM"<<endl;
+    cout<<"Введите число римскими цифрами IVXLCDM"<<endl;
     cin>>str;
     for (int i =0; i < str.size(); i++){
         if (znach.find(str[i]) == string::npos){
             vhod = false;
-            cout << "Error: íåäîïóñòèìûé ñèìâîë" << endl;
+            cout << "Error" << endl;
             return 1;
         }
     }
@@ -38,3 +38,4 @@ int main(){
     cout<<summ;
 return 0;
 }
+
