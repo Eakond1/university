@@ -51,11 +51,11 @@ string fromDecimal(long long decimalNumber, int toBase) {
 
 string convertBase(const string& number, int fromBase, int toBase) {
     if (fromBase < 2 || fromBase > 16 || toBase < 2 || toBase > 16) {
-        return "Ошибка: система счисления должна быть от 2 до 16";
+        return "РћС€РёР±РєР°: СЃРёСЃС‚РµРјР° СЃС‡РёСЃР»РµРЅРёСЏ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РѕС‚ 2 РґРѕ 16";
     }
 
     if (!isValidNumber(number, fromBase)) {
-        return "Ошибка: некорректное число для данной системы счисления";
+        return "РћС€РёР±РєР°: РЅРµРєРѕСЂСЂРµРєС‚РЅРѕРµ С‡РёСЃР»Рѕ РґР»СЏ РґР°РЅРЅРѕР№ СЃРёСЃС‚РµРјС‹ СЃС‡РёСЃР»РµРЅРёСЏ";
     }
 
     if (fromBase == toBase) return number;
@@ -68,13 +68,13 @@ int main() {
     string number;
     int fromBase, toBase;
 
-    cout << "Введите число: ";
+    cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";
     cin >> number;
 
-    cout << "Введите исходную систему счисления (2-16): ";
+    cout << "Р’РІРµРґРёС‚Рµ РёСЃС…РѕРґРЅСѓСЋ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ (2-16): ";
     cin >> fromBase;
 
-    cout << "Введите целевую систему счисления (2-16): ";
+    cout << "Р’РІРµРґРёС‚Рµ С†РµР»РµРІСѓСЋ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ (2-16): ";
     cin >> toBase;
 
     string result = convertBase(number, fromBase, toBase);
