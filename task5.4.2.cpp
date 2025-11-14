@@ -1,3 +1,4 @@
+//Ð—Ð°Ð´Ð°Ñ‡Ð° 44
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -11,12 +12,12 @@ int main(){
     setlocale(LC_ALL,"rus");
     int numberOfStudents;
     double height;
-    cout<<"Ââåäèòå êîëè÷åñòâî ó÷åíèêîâ â êëàññå ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ¾Ð² Ð² ÐºÐ»Ð°ÑÑÐµ ";
     cin>>numberOfStudents;
     cout<<"";
     double allHeights[numberOfStudents];
     int i = 0;
-    cout<<"Ââåäèòå ðîñò ó÷åíèêîâ ";
+    cout<<"Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð¾ÑÑ‚ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ¾Ð² ";
     while (i < numberOfStudents){
         cin >> allHeights[i];
         i++;
@@ -34,16 +35,15 @@ int main(){
             aboveAvarage++;
         }
     }
-    cout<<"Êîëè÷åñòâî ó÷åíèêîâ, ÷åé ðîñò âûøå, ÷åì ñðåäíèé " << aboveAvarage<<endl;
+    cout<<"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ¾Ð², Ñ‡ÐµÐ¹ Ñ€Ð¾ÑÑ‚ Ð²Ñ‹ÑˆÐµ, Ñ‡ÐµÐ¼ ÑÑ€ÐµÐ´Ð½Ð¸Ð¹ " << aboveAvarage<<endl;
     int numberOfPair=0;
     for(int i=0; i<numberOfStudents; i++){
         for(int j = 1; j< numberOfStudents-1;j++){
             if (allHeights[i] == allHeights[j] && i!=j){
-                    cout<<allHeights[i]<< " "<< allHeights[j]<<" ";
                 numberOfPair++;
             }
         }
     }
-    cout<<numberOfPair;
+    cout<<"ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð°Ñ€ ÑƒÑ‡ÐµÐ½Ð¸ÐºÐ¾Ð² Ñ Ð¾Ð´Ð¸Ð½Ð°ÐºÐ¾Ð²Ñ‹Ð¼ Ñ€Ð¾ÑÑ‚Ð¾Ð¼ " << numberOfPair;
     return 0;
 }
