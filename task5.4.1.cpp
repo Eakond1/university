@@ -25,3 +25,4 @@ int main(){
     cout<<summa;
     return 0;
 }
+
