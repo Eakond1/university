@@ -1,3 +1,4 @@
+//–®–∏—Ñ—Ä –¶–µ–∑–∞—Ä—è(32 –∑–∞–¥–∞–Ω–∏–µ)
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -46,7 +47,7 @@ string convertToCipher(string text, int k){
 int main(){
     setlocale(LC_ALL,"rus");
     string text;
-    cout << "¬‚Â‰ËÚÂ ÚÂÍÒÚ Ù‡ÈÎ‡: ";
+    cout << "√Ç√¢√•√§√®√≤√• √≤√•√™√±√≤ √¥√†√©√´√†: ";
     getline(cin, text);
     ofstream file("1.txt");
     file << text;
@@ -55,9 +56,10 @@ int main(){
     string content;
     getline(readFile, content);
     readFile.close();
-    cout << "¬‚Â‰ËÚÂ Ò‰‚Ë„ "<< endl;
+    cout << "√Ç√¢√•√§√®√≤√• √±√§√¢√®√£ "<< endl;
     int k ;
     cin>>k;
     cout<< convertToCipher(content,k);
     return 0;
 }
+
