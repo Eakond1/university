@@ -47,7 +47,7 @@ string convertToCipher(string text, int k){
 int main(){
     setlocale(LC_ALL,"rus");
     string text;
-    cout << "Ââåäèòå òåêñò ôàéëà: ";
+    cout << "Введите текст файла: ";
     getline(cin, text);
     ofstream file("1.txt");
     file << text;
@@ -56,7 +56,7 @@ int main(){
     string content;
     getline(readFile, content);
     readFile.close();
-    cout << "Ââåäèòå ñäâèã "<< endl;
+    cout << "Введите сдвиг "<< endl;
     int k ;
     cin>>k;
     cout<< convertToCipher(content,k);
